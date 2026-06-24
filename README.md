@@ -56,3 +56,50 @@
 
 בסיום ההרצה, Gradle יציג את תוצאות הבדיקות וידווח האם כל הבדיקות עברו בהצלחה (BUILD SUCCESSFUL).
 
+
+# Bash Scripts Assignment
+
+## Team Members
+- Veronika Godin
+
+## Description
+This project contains five Bash scripts.
+
+## Scripts
+
+### 1. check_internet.sh
+Checks internet connection and prints a log to the screen.
+
+Run:
+./scripts/check_internet.sh
+
+### 2. add_prefix_txt.sh
+Adds a prefix to all txt files in a specific directory.
+
+Run:
+./scripts/add_prefix_txt.sh <directory> <prefix>
+
+Example:
+./scripts/add_prefix_txt.sh test_folder new_
+
+### 3. count_files.sh
+Counts lines, words, and characters in each file in a directory.
+
+Run:
+./scripts/count_files.sh <directory>
+
+### 4. delete_old_files.sh
+Deletes files older than X days from a specific directory.
+
+Run:
+./scripts/delete_old_files.sh <directory> <days>
+
+Example:
+./scripts/delete_old_files.sh test_folder 7
+
+### 5. disk_usage.sh
+Displays disk usage for directories.
+
+Run:
+./scripts/disk_usage.sh <directory>
+
