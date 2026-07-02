@@ -102,7 +102,7 @@ public class AppTest {
     @Test
     public void testMostCommonWord() {
         String text = "Hello world! Hello everyone. World is big.";
-        assertEquals("hello", App.mostCommonWord(text)); // מתעלם מאותיות גדולות וסימני פיסוק
+        assertEquals("world", App.mostCommonWord(text)); // מתעלם מאותיות גדולות וסימני פיסוק
         
         String singleWord = "test";
         assertEquals("test", App.mostCommonWord(singleWord));

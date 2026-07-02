@@ -1,105 +1,48 @@
-\# תרגיל בית 2 - בדיקות יחידה (Unit Tests) ב-Java
-
-
-
-\## חברי הצוות
-
-\* עידו 
-
-\* ורוניקה
-
-\* אוריין
-
-
-
-\## תיאור הפרויקט
-
-בפרויקט זה כתבנו סט של בדיקות יחידה (Unit Tests) בעזרת ספריית JUnit עבור מגוון פונקציות שירות מתמטיות ופעולות על מחרוזות. הבדיקות מכסות מקרי קצה (Edge Cases), כולל זריקת חריגות (Exceptions), קלטים ריקים וערכים שליליים. כמו כן, הפרויקט כולל תיעוד של תהליך הלמידה העצמית וכתיבת הבדיקות בעזרת כלי LLM תחת תיקיית ה-logs.
-
-
-
-\## הוראות הרצה למשתמש
-
-כדי להוריד את הפרויקט ולהריץ את בדיקות היחידה במחשבך, יש לבצע את השלבים הבאים לפי הסדר:
-
-
-
-\### שלב א': שכפול הפרויקט (Clone)
-
-פתח את הטרמינל/שורת הפקודה והורד את הפרויקט למחשבך באמצעות הפקודה:
-
-`git clone https://github.com/Afeka-DevTools/26b-10142-unittesting-ido\_veronika\_oriyan.git`
-
-
-
-לאחר מכן, היכנס לתיקיית הפרויקט שנוצרה:
-
-`cd 26b-10142-unittesting-ido\_veronika\_oriyan`
-
-
-
-\### שלב ב': הרצת הבדיקות
-
-מכיוון שהפרויקט מבוסס על Gradle, ניתן להריץ את כל בדיקות היחידה בצורה אוטומטית בעזרת העטיפה של Gradle (Gradle Wrapper). 
-
-
-
-הרץ את הפקודה הבאה בטרמינל (בסביבת Windows):
-
-`gradlew test`
-
-
-
-(במערכות Linux/Mac יש להריץ: `./gradlew test`)
-
-
-
-בסיום ההרצה, Gradle יציג את תוצאות הבדיקות וידווח האם כל הבדיקות עברו בהצלחה (BUILD SUCCESSFUL).
-
-
-# Bash Scripts Assignment
+# HW2 - Unit Testing
 
 ## Team Members
 - Veronika Godin
+- Ido
+- Oriyan
 
-## Description
-This project contains five Bash scripts.
+## Project Description
 
-## Scripts
+This project is part of HW2 in the Dev Tools course.
 
-### 1. check_internet.sh
-Checks internet connection and prints a log to the screen.
+The goal of the project is to write unit tests for Java methods in App.java.
+The tests are written in AppTest.java using JUnit assertions.
+The project uses Gradle to run all tests.
 
-Run:
-./scripts/check_internet.sh
+The tests check regular cases, edge cases, and different possible behaviors of the functions.
 
-### 2. add_prefix_txt.sh
-Adds a prefix to all txt files in a specific directory.
+## Tested Code
 
-Run:
-./scripts/add_prefix_txt.sh <directory> <prefix>
+The tested code is located in:
 
-Example:
-./scripts/add_prefix_txt.sh test_folder new_
+app/src/main/java/org/example/App.java
 
-### 3. count_files.sh
-Counts lines, words, and characters in each file in a directory.
+## Unit Tests
 
-Run:
-./scripts/count_files.sh <directory>
+The unit tests are located in:
 
-### 4. delete_old_files.sh
-Deletes files older than X days from a specific directory.
+app/src/test/java/org/example/AppTest.java
 
-Run:
-./scripts/delete_old_files.sh <directory> <days>
+## How to Clone the Project
 
-Example:
-./scripts/delete_old_files.sh test_folder 7
+git clone https://github.com/Afeka-DevTools/26b-10142-unittesting-ido_veronica_oriyan.git
 
-### 5. disk_usage.sh
-Displays disk usage for directories.
+## How to Enter the Project Folder
 
-Run:
-./scripts/disk_usage.sh <directory>
+cd 26b-10142-unittesting-ido_veronica_oriyan
 
+## How to Give Permission to Gradle
+
+chmod +x gradlew
+
+## How to Run the Tests
+
+./gradlew test
+
+## Test Result
+
+All tests passed successfully.

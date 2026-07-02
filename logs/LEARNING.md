@@ -1,8 +1,28 @@
-תיעוד למידה עצמית - בדיקות יחידה (Unit Tests) ב-Javaבחרתי להשתמש במודל השפה Gemini לטובת הלמידה.  הבקשה שלי למודל:
+# LEARNING.md
 
-"הסבר לי בבקשה על כתיבת בדיקות יחידה (Unit Tests) בשפת Java. אנא תן לי הקשר רחב והסבר ממוקד."  תשובת המודל (סיכום):
+## Purpose
 
-המודל הסביר שבדיקות יחידה הן קטעי קוד שנועדו לבדוק האם פונקציה מסוימת שכתבנו עובדת בדיוק כפי שציפינו. ב-Java, נהוג להשתמש בספריית בדיקות כמו JUnit.
+In this part, we used an LLM to learn about unit testing in Java.
 
-הבדיקה עובדת על בסיס פונקציות אימות (Assert)  – אנחנו מריצים את הפונקציה שלנו עם קלט נתון, ומצהירים למה אנחנו מצפים שהיא תחזיר. אם הפלט שהתקבל בפועל (Actual) תואם לפלט שציפינו לו (Expected), הבדיקה עוברת. אם יש פער, פונקציית ה-Assert תכשיל את הבדיקה וכך נדע שיש לנו באג.  
+## Prompt
 
+Explain what unit tests are in Java.
+Explain how to write unit tests using JUnit and Gradle.
+Explain the difference between assertEquals, assertTrue, assertFalse, and assertThrows.
+Give simple examples.
+
+## Summary
+
+Unit tests are tests that check small parts of the code, usually one method at a time.
+In Java, we can write unit tests using JUnit.
+Gradle can run the tests using the command:
+
+./gradlew test
+
+## What we learned
+
+- @Test marks a method as a test.
+- assertEquals(expected, actual) checks if the actual result equals the expected result.
+- assertTrue(condition) checks if a condition is true.
+- assertFalse(condition) checks if a condition is false.
+- assertThrows checks if a method throws an exception.
