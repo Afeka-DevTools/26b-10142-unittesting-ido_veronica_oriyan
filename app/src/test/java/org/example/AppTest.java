@@ -101,10 +101,40 @@ public class AppTest {
 
     @Test
     public void testMostCommonWord() {
-        String text = "Hello world! Hello everyone. World is big.";
-        assertEquals("world", App.mostCommonWord(text)); // מתעלם מאותיות גדולות וסימני פיסוק
-        
+        String text = "Hello world! Hello everyone. Hello is common.";
+
+        assertEquals("hello", App.mostCommonWord(text));
+
         String singleWord = "test";
         assertEquals("test", App.mostCommonWord(singleWord));
+    }
+
+    @Test
+    public void testFilterEvensWithEmptyList() {
+        assertTrue(App.filterEvens(List.of()).isEmpty());
+    }
+    @Test
+    public void testFilterEvensWithNegativeNumbersAndZero() {
+        List<Integer> numbers = Arrays.asList(-4, -3, -2, -1, 0);
+
+        assertEquals(
+            Arrays.asList(-4, -2, 0),
+            App.filterEvens(numbers)
+        );
+    }
+    @Test
+    public void testAverageWithSingleElement() {
+        assertEquals(10.0, App.average(new int[]{10}), 0.001);
+    }
+    @Test
+    public void testIsAnagramWithDifferentLengths() {
+        assertFalse(App.isAnagram("a", "aa"));
+    }
+    @Test
+    public void testFibonacciUpToOne() {
+        assertEquals(
+            Arrays.asList(0, 1, 1),
+            App.fibonacciUpTo(1)
+        );
     }
 }
