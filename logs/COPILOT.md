@@ -2,6 +2,8 @@
 
 ## Student
 Oriyan Ben Cohen
+Veronica Godin
+Ido Caspi
 
 ## Topic
 Completing and running unit tests in Java using JUnit.
