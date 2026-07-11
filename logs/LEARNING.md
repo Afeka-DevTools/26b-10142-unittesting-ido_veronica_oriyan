@@ -1,7 +1,9 @@
 # LEARNING - Part 2
 
 ## Student
-Oriyan Ben Cohen
+Oriyan Ben Cohen 
+Veronica Godin
+Ido Caspi
 
 ## Topic
 Learning unit testing in Java using JUnit.
