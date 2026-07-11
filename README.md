@@ -2,8 +2,8 @@
 
 ## Team Members
 - Veronika Godin
-- Ido
-- Oriyan
+- Ido Caspi
+- Oriyan Ben Cohen
 
 ## Project Description
 
